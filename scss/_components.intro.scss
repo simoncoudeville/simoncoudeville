@@ -1,0 +1,14 @@
+/*
+    Component: intro
+    ---
+    The intro of the site
+*/
+
+.intro__p {	
+	@include text-dimensions($ms3,1.125);
+
+	@include mq($bp3) {		
+		@include text-dimensions($ms4,1.25);
+	}
+	
+}

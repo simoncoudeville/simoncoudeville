@@ -1,0 +1,9 @@
+/*
+    Component: logo
+    ---
+    The logo
+*/
+
+.c-logo {
+	@include text-dimensions($alpha-font-size,1);
+}

@@ -1,0 +1,17 @@
+/*
+    Component: site
+    ---
+    Everything else
+*/
+
+.c-site-footer {
+
+	@include mq($bp2) {
+		@include padding-bottom(1);
+	}
+
+	@include mq($bp3) {
+		@include padding-bottom(2);
+	}
+
+}

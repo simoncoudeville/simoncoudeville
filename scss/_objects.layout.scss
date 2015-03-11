@@ -1,0 +1,33 @@
+/*
+    Object: layout
+    ---
+    The layout system
+*/
+
+.o-layout__holder {
+	overflow: hidden;
+
+	@include padding-top(1);
+
+	@include mq($bp2) {
+		@include padding-top(2);
+		@include padding-lr(1,1);
+	}
+
+	@include mq($bp3) {
+		@include padding-top(3);		
+		@include padding-lr(2,2);		
+	}
+
+}
+
+.o-layout__row {
+	max-width: $bp3;
+	overflow: hidden;
+}
+
+.o-layout__item {
+	float: left;
+	width: 100%;
+	@include padding-lr(1,1);	
+}
