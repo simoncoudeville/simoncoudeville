@@ -101,6 +101,13 @@
 	margin-top: $top * 1rem;
 }
 
+@mixin padding-lr($left: 1, $right: 0) {
+	padding-left: $left * $alpha-font-size * 1px;
+	padding-left: $left * 1rem;
+	padding-right: $right * $alpha-font-size * 1px;
+	padding-right: $right * 1rem;
+}
+
 // Border-box polyfill helper.
 // @include border-box;
 
@@ -127,6 +134,11 @@
 	@media (#{$query1}-#{$query2}: $point) {
 		@content;
 	}
+}
+
+@mixin centered {
+	max-width: 36em;
+	margin: 0 auto;
 }
 
 // Vertically center any object within its container. Works in IE9 and up.

@@ -12,15 +12,15 @@ $show-baseline-grid			: false; // toggle the visibility of the baseline (true/fa
 $baseline-holder 			: holder; // set the classname of the element which will show the baseline
 $grid-color 				: rgba(#000,.1); // set the baseline grid color and opacity
 
-$alpha-font-family			: sans-serif;
-$alpha-font-size			: 16; // pixel-value
-$alpha-font-weight			: 400;
+$alpha-font-family			: "Nitti Grotesk", sans-serif;
+$alpha-font-size			: 20; // pixel-value
 $alpha-line-height			: 1.5;
 $alpha-baseline-grid		: 7; // pixel-value
 $alpha-leading				: 1; // multiplier
 
-$beta-font-family			: sans-serif;
-$beta-font-weight			: 700;
+$alpha-font-weight			: 300;
+$beta-font-weight			: 400;
+$gamma-font-weight			: 700;
 
 // Grid
 
@@ -35,6 +35,7 @@ $bp2 						: 480/16*1em;
 $bp3						: 680/16*1em;
 $bp4						: 960/16*1em;
 $bp5						: 1140/16*1em;
+$bp6						: 1440/16*1em;
 
 // the last breakpoint is calculated in shared/_grid.scss
 // $bp5: #{1200 / $alpha-font-size}em;
@@ -85,13 +86,28 @@ $highlight					: 0%; // Range: 0-100%
 // - Semantic
 //
 
+// hipster gradients
+// LightSteelBlue
+// Khaki PaleGoldenRod
+// Lavender thistle
+// CornflowerBlue
+// Salmon
+// SkyBlue
+// LightCoral
+// LightGreen
+// LightSalmon
+// PaleTurquoise
+// LightBlue
+// 
+// PowderBlue
+
 // Cool
 
-$aqua						: #7FDBFF;
-$blue						: #0074D9;
+$aqua						: #d1eaec;
+$blue						: #52a3cc;
 $navy						: #001F3F;
 $teal						: #39CCCC;
-$green						: #2ECC40;
+$green						: #52cc85;
 $olive						: #3D9970;
 $lime						: #01FF70;
 
@@ -99,7 +115,7 @@ $lime						: #01FF70;
 
 $yellow						: #FFDC00;
 $orange						: #FF851B;
-$red						: #FF4136;
+$red						: #ff6673;
 $fuchsia					: #F012BE;
 $purple						: #B10DC9;
 $maroon						: #85144B;
@@ -109,14 +125,17 @@ $maroon						: #85144B;
 $white						: #fff;
 $silver						: #ddd;
 $gray						: #aaa;
-$black						: #111;
+$black						: #000;
+
+$lavender 					: #E6E6FA;
+$khaki 						: #F0E68C;
 
 // Semantic classes
 
 $alpha-neutral				: $white;
 $beta-neutral				: $black;
 
-$alpha-text-color			: $black;
+$alpha-text-color			: $black; //rgba($black,.75);
 $alpha-text-color-light		: mix($alpha-text-color, $alpha-neutral, 50%);
 $alpha-text-color-dark		: mix($alpha-text-color, $beta-neutral, 50%);
 
@@ -125,7 +144,7 @@ $beta-text-color-light		: mix($beta-text-color, $alpha-neutral, 50%);
 $beta-text-color-dark		: mix($beta-text-color, $beta-neutral, 50%);
 
 // Primary elements
-$alpha-ui-color				: $blue;
+$alpha-ui-color				: $lavender;
 $alpha-ui-color-light		: mix($alpha-ui-color, $alpha-neutral, 50%);
 $alpha-ui-color-dark		: mix($alpha-ui-color, $beta-neutral, 50%);
 

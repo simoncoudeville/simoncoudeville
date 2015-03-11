@@ -2,43 +2,37 @@
 // module: home
 //
 
-.intro-holder {
-	border-bottom: 1px solid $beta-ui-color-light;
+.holder--intro {
 
-	@include mq($bp2) {
-		@include padding-tb(2,.5);
-	}
+	// @include mq($bp2) {
+	// 	@include padding-tb(2,.5);
+	// }
 
-	@include mq($bp4) {
-		@include padding-tb(6,4.5);
-	}
+	// @include mq($bp4) {
+	// 	@include padding-tb(6,4.5);
+	// }
 
-	@include mq($bp5) {
-		@include padding-tb(10,8.5);
-	}
-
-}
-
-.intro {
-	@include box-(12,1,1);
-
-	h1 {
-		font-weight: 300;
-	}
-
-	p {
-		color: $beta-text-color;
-		text-transform: uppercase;
-		font-weight: 700;
-	}
+	// @include mq($bp5) {
+	// 	@include padding-tb(10,8.5);
+	// }
 
 }
 
-.main-col-6 {
-	@include box-(12,1,1);
+.intro__p {	
+	// color: $beta-text-color-light;
+	// @include centered;
+	// font-weight: $alpha-font-weight;
+	// text-align: justify;
+	// font-family: $beta-font-family;
+	font-weight: 300;
+	@include text-dimensions($ms3,1.125);
 
-	@include mq($bp4) {
-		@include box-(6,1,1);
+	@include mq($bp3) {		
+		@include text-dimensions($ms4,1.25);
 	}
 
+	// @include mq($bp5) {
+	// 	@include text-dimensions($ms5,1.375);		
+	// }
+	
 }

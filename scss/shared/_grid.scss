@@ -80,7 +80,7 @@ $fluid-grid-margin: ($grid-margin / $grid-width) * 100 ;
 	width: ($fluid-grid-column * $amount) + ($fluid-grid-gutter * $amount) + 0%;
 	float: left;
 	position: relative;
-	@include px-padding-lr($left, $right);
+	@include padding-lr($left, $right);
 	// @include em-padding-lr($left, $right); // experimental
 }
 

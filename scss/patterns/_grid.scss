@@ -4,17 +4,36 @@
 
 .row {
 	@extend %clearfix;
-	margin: 0 auto;
-	max-width: $grid-width/$alpha-font-size*1em;
+	// margin: 0 auto;
+	// max-width: $grid-width/$alpha-font-size*1em;
+	// max-width: 44em;
+	// max-width: 60%;
 
 	.row {
 		@include px-margin-lr(-1,-1);
 	}
 
+	@include mq($bp3) {
+		// max-width: 80%;
+	}
+
+	@include mq($bp4) {
+		// max-width: 70%;
+		max-width: 40em;
+	}
+
+	// @include mq($bp5) {
+	// 	max-width: 60%;
+	// }
+
+	// @include mq($bp6) {
+	// 	max-width: 50%;
+	// }
+
 }
 
 .col {
-	@include px-padding-lr(1,1);
+	@include padding-lr(1,1);
 }
 
 .last-col {

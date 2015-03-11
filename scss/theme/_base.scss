@@ -6,26 +6,53 @@
 
 *, *:before, *:after {
   box-sizing: inherit;
+  // color: #fff;
 }
 
 html {
 	box-sizing: border-box;
-	font: $alpha-font-weight $alpha-font-size/16*100%/#{$alpha-line-height} $alpha-font-family ;
+	min-height: 100%;
+	font:  $alpha-font-size/16*100%/#{$alpha-line-height} $alpha-font-family ;
 	-webkit-overflow-scrolling: touch;
 	-webkit-text-size-adjust: 100%;
 	    -ms-text-size-adjust: 100%;
-	background-color: $alpha-text-color;
 
-	@include mq($bp5) {
+	background-attachment: fixed;	
+	background-color: $black;
+	// background-image: linear-gradient(Palegoldenrod, Khaki);
+	// background-image: linear-gradient(Lavender, thistle);
+	// background-image: linear-gradient(Lavender, ALICEBLUE);
+	// background-image: linear-gradient(Lavender, Azure);
+	// background-image: linear-gradient(LIGHTCYAN, LIGHTSTEELBLUE);
+	// background-image: linear-gradient(Snow, LINEN);
+	// background-image: linear-gradient(Ivory, Beige);
+	// background-image: linear-gradient(MINTCREAM, HONEYDEW);
+	// background-image: linear-gradient(MINTCREAM, Azure);
+
+	@include mq($bp3) {
+		background-attachment: fixed;
 		font-size: $alpha-font-size/16*112.5%;
 	}
+
+	@include mq($bp4) {
+		font-size: $alpha-font-size/16*125%;
+	}
+
+	@include mq($bp5) {
+		font-size: $alpha-font-size/16*137.5%;
+	}
+
+	@include mq($bp6) {
+		font-size: $alpha-font-size/16*150%;
+	}	
 
 }
 
 body {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizelegibility;
-	color: $alpha-text-color;
+	// color: $alpha-text-color;
+	color: $alpha-ui-color;
 }
 
 ::-moz-selection {
