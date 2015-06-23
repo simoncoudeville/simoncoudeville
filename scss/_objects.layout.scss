@@ -7,16 +7,19 @@
 .o-layout__holder {
 	overflow: hidden;
 
-	@include padding-top(1);
-
 	@include mq($bp2) {
-		@include padding-top(2);
+		@include padding-top(1);
 		@include padding-lr(1,1);
 	}
 
 	@include mq($bp3) {
-		@include padding-top(3);		
+		@include padding-top(2);		
 		@include padding-lr(2,2);		
+	}
+
+	@include mq($bp4) {
+		@include padding-top(3);		
+		@include padding-lr(3,3);		
 	}
 
 }
@@ -26,8 +29,14 @@
 	overflow: hidden;
 }
 
-.o-layout__item {
-	float: left;
-	width: 100%;
+.o-layout__item {	
 	@include padding-lr(1,1);	
+
+	@include mq($bp1) {
+		float: left;
+		// font-size: 0;
+		width: 100%;
+		// display: inline-block;
+	}
+
 }

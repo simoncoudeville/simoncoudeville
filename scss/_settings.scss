@@ -12,13 +12,16 @@ $show-baseline-grid			: false; // toggle the visibility of the baseline (true/fa
 $baseline-holder 			: holder; // set the classname of the element which will show the baseline
 $grid-color 				: rgba(#000,.1); // set the baseline grid color and opacity
 
-$alpha-font-family			: "Nitti Grotesk", sans-serif;
+// $alpha-font-family			: "Nitti Grotesk", sans-serif;
+// $alpha-font-family			: "nudista-web", sans-serif;
+// $alpha-font-family			: "runda", sans-serif;
+$alpha-font-family			: "ff-basic-gothic-web-pro", sans-serif;
 $alpha-font-size			: 20; // pixel-value
 $alpha-line-height			: 1.5;
 $alpha-baseline-grid		: 7; // pixel-value
 $alpha-leading				: 1; // multiplier
 
-$alpha-font-weight			: 300;
+$alpha-font-weight			: 200;
 $beta-font-weight			: 400;
 $gamma-font-weight			: 700;
 
@@ -88,7 +91,7 @@ $highlight					: 0%; // Range: 0-100%
 // LightSalmon
 // PaleTurquoise
 // LightBlue
-// 
+//
 // PowderBlue
 
 // Cool
@@ -120,42 +123,26 @@ $black						: #000;
 $lavender 					: #E6E6FA;
 $khaki 						: #F0E68C;
 
-// Semantic classes
-
-$alpha-neutral				: $white;
-$beta-neutral				: $black;
-
-$alpha-text-color			: $black; //rgba($black,.75);
-$alpha-text-color-light		: mix($alpha-text-color, $alpha-neutral, 50%);
-$alpha-text-color-dark		: mix($alpha-text-color, $beta-neutral, 50%);
-
-$beta-text-color			: $alpha-text-color-light;
-$beta-text-color-light		: mix($beta-text-color, $alpha-neutral, 50%);
-$beta-text-color-dark		: mix($beta-text-color, $beta-neutral, 50%);
-
 // Primary elements
 $alpha-ui-color				: $lavender;
-$alpha-ui-color-light		: mix($alpha-ui-color, $alpha-neutral, 50%);
-$alpha-ui-color-dark		: mix($alpha-ui-color, $beta-neutral, 50%);
 
 // Secondary elements
 $beta-ui-color				: $gray;
-$beta-ui-color-light		: mix($beta-ui-color, $alpha-neutral, 50%);
-$beta-ui-color-dark			: mix($beta-ui-color, $beta-neutral, 50%);
 
 // Used for borders
 $gamma-ui-color				: $silver;
-$gamma-ui-color-light		: mix($gamma-ui-color, $alpha-neutral, 50%);
-$gamma-ui-color-dark		: mix($gamma-ui-color, $beta-neutral, 50%);
 
-// Used for backgrounds
-$delta-ui-color				: $white;
-$delta-ui-color-light		: mix($delta-ui-color, $alpha-neutral, 50%);
-$delta-ui-color-dark		: mix($delta-ui-color, $beta-neutral, 50%);
+// text colors
+$alpha-text-color			: hsl(hue($alpha-ui-color),5,10);
+$beta-text-color			: hsl(hue($alpha-ui-color),5,30);
+$gamma-text-color			: hsl(hue($alpha-ui-color),5,45);
+$delta-text-color			: hsl(hue($alpha-ui-color),5,60);
+$jota-text-color			: hsl(hue($alpha-ui-color),5,75);
+$mu-text-color				: hsl(hue($alpha-ui-color),5,90);
+$pi-text-color				: hsl(hue($alpha-ui-color),5,95);
+$rho-text-color				: hsl(hue($alpha-ui-color),5,97.5);
 
 $border-color 				: $alpha-text-color;
-$border-color-light			: mix($border-color, $alpha-neutral, 50%);
-$border-color-dark			: mix($border-color, $beta-neutral, 50%);
 
 $error-color 				: $red;
 $success-color 				: $green;

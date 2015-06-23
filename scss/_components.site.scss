@@ -4,6 +4,23 @@
     Everything else
 */
 
+.c-site-header {	
+	@include padding-top(1);
+
+	@include mq($bp2) {
+		@include padding-top(2);		
+	}
+
+	@include mq($bp3) {
+		@include padding-top(3);		
+	}
+
+	@include mq($bp4) {
+		@include padding-top(4);		
+	}
+
+}
+
 .c-site-footer {
 
 	@include mq($bp2) {
@@ -11,7 +28,15 @@
 	}
 
 	@include mq($bp3) {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
 		@include padding-bottom(2);
+	}
+
+	@include mq($bp4) {
+		@include padding-bottom(3);		
 	}
 
 }
